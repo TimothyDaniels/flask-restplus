@@ -444,7 +444,7 @@ class Api(object):
 
         :rtype: str
         '''
-        return url_for(self.endpoint('specs'), _external=True)
+        return url_for(self.endpoint('specs'), _external=False)
 
     @property
     def base_url(self):
